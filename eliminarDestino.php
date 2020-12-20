@@ -1,6 +1,8 @@
 <?php
 
     require 'config/config.php';
+    $Autenticar = new autenticar;
+    $Autenticar->autenticar();
     $Destino = new Destino;
     $chequeo = $Destino->eliminarDestino();
     $css = 'danger';

@@ -1,5 +1,7 @@
 <?php
     require 'config/config.php';
+    $Autenticar = new autenticar;
+    $Autenticar->autenticar();
     $Destino = new Destino();
     $destinos = $Destino->listarDestinos();
     include 'includes/header.php';
@@ -28,7 +30,7 @@
                     <td><?= $destino['destID'] ?></td>
                     <td><?= $destino['destNombre'] ?></td>
                     <td><?= $destino['regNombre'] ?></td>
-                    <td><?= $destino['destPrecio'] ?></td>
+                    <td>$<?= $destino['destPrecio'] ?></td>
                     <td><?= $destino['destAsientos'] ?></td>
                     <td><?= $destino['destDisponibles'] ?></td>
                     <td><a href="formModificarDestino.php?destID=<?= $destino['destID'] ?>" class="btn btn-outline-secondary">Modificar</a></td>

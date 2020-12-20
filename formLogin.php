@@ -21,19 +21,22 @@
             </form>
         </div>
 
-<?php
-        if(isset($_GET['error'])){
-?>
-            <script>
-                Swal.fire(
-                    'Error de logueo',
-                    'Usuario y/o Clave incorrectos',
-                    'error'
-                );
-            </script>
-<?php
+        <?php
+        if( isset($_GET['error']) ){
+            //capturamos error
+            $error = $_GET['error'];
+            $mensaje = 'Nombre de usuario y/o contraseña incorrectos.';
+            if( $error == 2 ){
+                $mensaje = 'Debe loguearse para operar el sistema.';
+            }
+            ?>
+            <div class="alert alert-danger col-8 mx-auto p-3">
+                <i class="fas fa-exclamation-triangle"></i>
+                <?= $mensaje ?>
+            </div>
+            <?php
         }
-?>
+        ?>
 
     </main>
 <?php

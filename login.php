@@ -1,4 +1,4 @@
 <?php
     require 'config/config.php';
-    $Usuario = new Usuario;
-    $Usuario->login();
+    $Autenticar = new autenticar;
+    $Autenticar->login();

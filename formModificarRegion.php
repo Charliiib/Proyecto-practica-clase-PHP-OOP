@@ -1,5 +1,7 @@
 <?php
     require 'config/config.php';
+    $Autenticar = new autenticar;
+    $Autenticar->autenticar();
     $Region = new Region;
     $Region->verRegionPorID();
     include 'includes/header.php';

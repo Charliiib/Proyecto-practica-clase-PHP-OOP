@@ -1,6 +1,8 @@
 <?php  
 
     require 'config/config.php';
+    $Autenticar = new autenticar;
+    $Autenticar->autenticar();
     $Region = new Region();
     $cantidad = $Region->verRegionPorDestino();
 	include 'includes/header.php';

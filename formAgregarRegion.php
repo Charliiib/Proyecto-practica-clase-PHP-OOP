@@ -2,6 +2,8 @@
 
     require 'config/config.php';
     include 'includes/header.php';
+    $Autenticar = new autenticar;
+    $Autenticar->autenticar();
 ?>
     
     <main class="container">
