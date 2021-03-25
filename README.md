@@ -1,1 +1,1 @@
-# Proyecto-practica-clase-PHP-OOP
+# EDUCACIONIT-PHP-OOP
